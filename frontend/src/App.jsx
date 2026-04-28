@@ -6,8 +6,7 @@ import ResultsTable from "./components/ResultsTable";
 import Footer from "./components/Footer";
 import "./App.css";
 
-const API_BASE = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api/places` : "/api/places";
-
+const API_BASE = "https://business-scraper-prod.up.railway.app/api/places";
 export default function App() {
   const [results, setResults] = useState([]);
   const [stats, setStats] = useState(null);
